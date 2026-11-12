@@ -1,3 +1,4 @@
+/* BASE & TEMPLATE STYLE */
 body {
   font-family: Raleway, sans-serif;
   background: #f6f8fd;
@@ -58,7 +59,38 @@ body {
   border-color: #0d6efd;
 }
 
-/* Footer */
+/* SPECIAL OFFERS / PROMO STYLE */
+.promo-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card-interactive {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.card-interactive:hover {
+  transform: translateY(-8px);
+  border-color: #0d6efd;
+  box-shadow: 0 15px 25px rgba(13, 110, 253, 0.15) !important;
+  z-index: 10;
+}
+
+.promo-img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.price-box {
+  transition: background-color 0.3s ease;
+}
+
+.card-interactive:hover .price-box {
+  background-color: rgba(13, 110, 253, 0.08) !important;
+}
+
+/* FOOTER STYLE */
 .footer .copyright a {
   color: #ee5050;
   text-decoration: none;
