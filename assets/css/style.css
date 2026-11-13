@@ -76,3 +76,53 @@ body {
 .footer .link a:hover {
   color: #0d6efd;
 }
+
+/* ===== css showroom ===== */
+/* ===== Navbar + Hero + Stats (Bob) ===== */
+.site-nav, .hero, .stats {
+  --bg: #ede8df;
+  --ink: #22231f;
+  --gold: #a8825a;
+  --muted: #7a776f;
+  --line: rgba(34, 35, 31, .14);
+  --serif: Georgia, "Times New Roman", serif;
+  font-family: Raleway, sans-serif;
+  font-weight: 300;
+  color: var(--ink);
+}
+.hero, .stats { background: var(--bg); }
+.site-nav a, .hero a { text-decoration: none; }
+.hero h1 { font-family: var(--serif); font-weight: 400; letter-spacing: -.01em; }
+
+.accent { font-style: italic; color: var(--gold); }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); }
+.copy { font-size: 14px; line-height: 2; color: var(--muted); }
+
+/* navbar */
+.site-nav { background: rgba(237, 232, 223, .92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.brand { font-family: var(--serif); font-size: 1.4rem; display: flex; align-items: center; gap: .75rem; }
+.brand-icon { width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--gold); color: var(--gold); font-size: 1.1rem; }
+.site-nav .nav-link { font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--ink); transition: color .25s; }
+.site-nav .nav-link:hover { color: var(--gold); }
+.social a { width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); font-size: .9rem; color: var(--ink); transition: all .25s; }
+.social a:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+
+/* buttons */
+.btn-ink, .btn-line { border-radius: 0; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; padding: .95rem 1.7rem; }
+.btn-ink { background: var(--ink); color: #fff; border: 1px solid var(--ink); }
+.btn-ink:hover { background: var(--gold); border-color: var(--gold); color: #fff; }
+.btn-line { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.btn-line:hover { background: var(--ink); color: #fff; }
+
+/* hero */
+.hero { padding: 5rem 0 4rem; }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.08; }
+.hero-visual { height: 400px; background: linear-gradient(145deg, #cfc6b6, #a99c86); overflow: hidden; }
+.hero-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* stats */
+.stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 2.5rem 0; }
+.stat-num { font-family: var(--serif); font-size: 2.6rem; line-height: 1; }
+.stat-label { margin-top: .6rem; }
+
+@media (max-width: 575.98px) { .hero-visual { height: 260px; } }
